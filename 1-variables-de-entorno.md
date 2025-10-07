@@ -16,13 +16,20 @@ docker run -d --name <nombre contenedor> -e <nombre variable1>=<valor1> -e <nomb
 <img width="1009" height="591" alt="image" src="https://github.com/user-attachments/assets/5c5566cb-e181-489c-aee1-d2ad23300494" />
 
 ### Crear un contenedor con la imagen de mysql, mapear todos los puertos
-# COMPLETAR
+# docker run -d --name mysql-contenedor -e MYSQL_ROOT_PASSWORD=tu_clave mysql
 
 ### ¿El contenedor se está ejecutando?
 # COMPLETAR
+Sí, el contenedor llamado mysql-contenedor se está ejecutando correctamente. 
+Esto se confirma con el comando docker ps -a, donde aparece con el estado Up, lo que indica que está activo y funcionando. También se observa que los puertos 3306/tcp y 33060/tcp están abiertos dentro del contenedor.
+
 
 ### Identificar el problema
 # COMPLETAR
+Aunque el contenedor está en ejecución, no se ha mapeado el puerto 3306 al host, lo que significa que no puedes conectarte a MySQL desde tu máquina local usando herramientas externas como MySQL Workbench o DBeaver. 
+Esto se debe a que el comando usado para crear el contenedor no incluyó la opción .
+
+
 
 ### Para crear un contenedor con variables de entorno especificadas
 - Portabilidad: Las aplicaciones se vuelven más portátiles y pueden ser desplegadas en diferentes entornos (desarrollo, pruebas, producción) simplemente cambiando el archivo de variables de entorno.
