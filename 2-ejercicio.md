@@ -15,11 +15,15 @@ La figura presenta el esquema creado en donde los puertos son:
 ## Desde el cliente
 ### Acceder desde el cliente al servidor postgres creado.
 # COMPLETAR CON UNA CAPTURA DEL LOGIN
+<img width="1637" height="745" alt="image" src="https://github.com/user-attachments/assets/20e5422a-b4a2-49dd-b8f4-ddd9fa7915d4" />
+
 ### Crear la base de datos info, y dentro de esa base la tabla personas, con id (serial) y nombre (varchar), agregar un par de registros en la tabla, obligatorio incluir su nombre.
 
 ## Desde el servidor postgresl
 ### Acceder al servidor
 ### Conectarse a la base de datos info
-# COMPLETAR
+# docker exec -it mi_postgres psql -U usuario -d info
 ### Realizar un select *from personas
 # AGREGAR UNA CAPTURA DE PANTALLA DEL RESULTADO
+<img width="908" height="322" alt="image" src="https://github.com/user-attachments/assets/7feb051e-0568-464e-9475-a38de84bc991" />
+
